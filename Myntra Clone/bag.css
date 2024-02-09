@@ -1,0 +1,115 @@
+/* Bag html section */
+
+.cartitemcontainer{
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ .cartitems{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cartitem{
+    width: 100%;
+    display: flex;
+    margin-bottom: 5%;
+    column-gap: 20%;
+}
+
+.imgs{
+    width: 150px;
+    border-radius: 4px;
+}
+
+.company_name{
+    font-size: 16px;
+    color: #282c3f;
+    margin: 6px 0px 6px 0px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+}
+.item_name{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}
+._price{
+    margin: 8px 0px;
+}
+.current_price{
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+}
+.original_price{
+    font-size: 12px;
+    color: #7E818c;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+._discount{
+    font-size: 12px;
+    color: #FF905A;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.return-policy{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+}
+.deliver-date{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}
+.cartitem button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+}
+.cartsummary{
+    width: 30%;
+}
+.cartsummary div{
+    padding: 0 0 10px 10px;
+    color: #535766;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}
+.price-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.discountcolor{
+    color: green;
+}
+hr{
+    margin-bottom: 8px;
+}
+.bag-order-button{
+    background-color: #ff3f6c;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px 0px;
+}

@@ -1,0 +1,28 @@
+/* Main section */
+.banner_container{
+    margin: 20px 0px;
+}
+.banner_image{
+    width: 100%;
+}
+.category_heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700s;
+}
+.category_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sale_item{
+    width: 250px;
+}
+
+
+
+

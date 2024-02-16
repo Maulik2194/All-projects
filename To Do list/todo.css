@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    min-height: 100vh;
+    background: linear-gradient(185deg, pink
+    ,skyblue);
+    margin: 0;
+    overflow: hidden;
+}
+.todoapp{
+    max-width: 545px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+.todoapp:hover{
+    animation: delay;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+.todoapp h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    font-weight: 800
+}
+.todoapp h2 img{
+    height: 25px;
+    margin-left: 12px;
+}
+.row{
+    display: flex;
+    background-color: #efe2e2;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+input{
+    flex: 1;
+    border: none;
+    background-color:transparent;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;  
+}
+button{
+    border: none;
+    background-color: #0a9c11;
+    padding: 0px 30px;
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(1, 99, 1);
+    animation: delay;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+ul {
+    list-style-type: none;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    overflow: auto;
+    cursor: pointer;
+    font-weight: 600;
+}
+ul li{
+    padding-bottom: 20px;
+    padding-left: 30px;
+    position: relative;    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-image: url("unchecked.png");
+    background-size: cover;
+    background-position: top;
+    top: 0px;
+    left: 0px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    ;
+}
+
+ul li.checked::before{
+    background-image: url("checked.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 10px;
+    color: #555;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #f3f3f3;
+}
+
+@keyframes delay {
+    from{box-shadow: 0px 0px 0px black;}
+    to{box-shadow: 0px 6px 20px black;}
+}

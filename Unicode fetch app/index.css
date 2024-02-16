@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 214, 214);
+}
+.unicode-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+.unicode-container h2{
+    font-size: 1.8rem;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.unicode-container input{
+    width: 90%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 0.15rem solid rgb(252, 12, 52);
+    margin-bottom: 1rem;
+}
+.unicode-container button{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(252, 12, 52);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.unicode-container button:hover{
+    background-color: rgb(192, 16, 45);
+}
